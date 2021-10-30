@@ -1,0 +1,416 @@
+/* GENERAL STYLING */
+
+body {
+    background-color: #0c2340;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.page-container {
+    display: grid;
+    row-gap: 10px;
+}
+
+.page-header {
+    background-color: #ae9142;
+    color: #0c2340;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.page-header a {
+    color: #0c2340;
+    text-decoration: none;
+}
+
+.page-header a:hover {
+    color: #00823E;
+}
+
+.page-header div:first-child img {
+    width: 130px;
+}
+
+.page-header div:nth-child(2) {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header h1 {
+    font-size: 56px;
+    text-transform: uppercase;
+}
+
+.page-header h2 {
+    font-size: 30px;
+}
+
+.page-header h1, .page-header h2 {
+    margin: 0;
+}
+
+.page-header div:last-child img {
+    width: 100px;
+}
+
+.nav {
+    background-color: #00823E;
+    position: sticky;
+    top: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.nav a:hover {
+    background-color: #ae9142;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.page-title header {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.vidgrid {
+    margin-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+    justify-items: center;
+    align-content: center;
+}
+
+.vidgrid .grid-item iframe {
+    width: 400px;
+    height: 225px;
+}
+
+.grid-item {
+    border: 3px solid #ae9142;
+}
+.vid-description {
+    margin-left: 10px;
+}
+
+.vid-description p:first-child {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.vid-description a {
+    color: white;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.vid-description a:hover {
+    color: #ae9142;
+}
+
+footer {
+    margin-top: 25px;
+    background-color: #ae9142;    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #0c2340;
+}
+
+footer a:hover {
+    color: #00823E;
+}
+
+/* END GENERAL STYLING */
+
+/* START OF STYLING OF INDIVIDUAL VIDEO PAGES */
+
+.full-video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.full-video-container div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-video-container iframe {
+    /* width: 900px;
+    height: 505px; */
+    border: 3px solid #ae9142
+}
+
+.full-vid-description {
+    text-align: center;
+    font-size: 20px;
+}
+
+.full-vid-description p:first-child {
+    text-transform: uppercase;
+}
+
+.full-vid-description p {
+    color: #ae9142;
+    text-transform: none;
+}
+
+/* END OF INDIVIDUAL-VIDEO-PAGE STYLING */
+
+/* STYLE '2021 SCHEDULE' PAGE */
+.overall-schedule {
+    border: 1px solid #ae9142;
+    font-size:large;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.overall-schedule div { /* MAKE INTO A GRID TO ADD BORDERS (WILL SPACE EVENLY) */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;        
+    margin-bottom: 10px;
+}
+
+.overall-schedule div:last-child {
+    border-right: none;
+}
+
+.overall-schedule p {
+    margin-bottom: 0;
+}
+
+.container-schedule {
+    margin-top: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-schedule div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.schedule-item {
+    background-color: #00823E;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.schedule-item:last-child {
+    margin-bottom: 0;
+}
+
+.schedule-item div:first-child {
+    display: flex;
+    text-align: center;
+}
+
+.schedule-item .date-opponent {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-opponent {
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ae9142;
+    border-radius: 10px;
+    width: 155.03px;
+    height: 104px;
+}
+
+.date-opponent p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* SPACING OF 'DATE' AND 'OPPONENT NAME' */
+.date-opponent p:first-child, .date-opponent p:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.date-opponent p:last-child {
+    margin-bottom: 0;
+}
+/* END SPACING OF 'DATE AND 'OPPONENT NAME' */
+
+/* DEFINE FONT SIZES OF TEXTS IN .date-opponent */
+.date-opponent p:first-child, .date-opponent p:last-child {
+    font-size: smaller;
+}
+
+.date-opponent p:nth-child(2) {
+    letter-spacing: 2px;
+}
+/* END DEFINE FONT SIZES OF TEXTS IN .date-opponent */
+
+
+.highlight-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.highlight-link a:hover {
+    color: #ae9142;
+}
+
+.result {
+    font-size: 30px;
+}
+
+/* END OF STYLING OF '2021 SCHEDULE' PAGE */
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 1440px) {
+    .vidgrid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .vidgrid .grid-item iframe {
+        width: 431px;
+        height: 242px;
+    }
+
+    .full-video-container iframe {
+        width: 1300px;
+        height: 730px;
+    }
+
+    .full-vid-description p {
+        font-size: xx-large;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1440px) {
+    .full-video-container iframe {
+        width: 900px;
+        height: 505px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .nav a {
+        font-size: small;
+    }
+    
+    .vidgrid {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 15px;
+        padding-right: 15px;
+        column-gap: 0px;
+        row-gap: 25px;
+    }
+
+    .vidgrid .grid-item {
+        width: 300px;
+    }
+
+    .vidgrid .grid-item iframe {
+        width: 300px;
+        height: 192px;
+    }
+
+    .full-video-container iframe {
+        width: 700px;
+        height: 393px;
+    }
+
+    .page-title header {
+        font-size: x-large;
+    }
+
+    .schedule-item p, .schedule-item a, .result p {
+        font-size: smaller;
+    }
+
+    .schedule-item img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .overall-schedule {
+        font-size: smaller;
+    }
+
+    .vidgrid {
+        column-gap: 10px;
+        row-gap: 25px;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+    }
+
+    .highlight-link {
+        margin-top: 10px;
+    }
+}
+
+/* END OF MEDIA QUERIES */
