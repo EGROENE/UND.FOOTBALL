@@ -1,0 +1,3 @@
+# UND.FOOTBALL
+This is a labor of love, dedicated to the football team that gave me so many memories (good and bad) as a child, and continues to do so today.
+This is an independent project, in which I am using my knowledge of HTML and CSS to build a site of my own brain's conception. I hope you like it.
