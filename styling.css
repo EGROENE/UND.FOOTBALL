@@ -403,9 +403,9 @@ footer a:hover {
 }
 
 @media all and (min-width: 426px) and (max-width: 768px) {
-    
     .result {
         font-size: 21px;
+        margin-right: 10px;
     }
 }
 
