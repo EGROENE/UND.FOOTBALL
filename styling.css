@@ -154,11 +154,11 @@ footer {
 footer a {
     text-decoration: none;
     font-weight: 800;
-    color: #0c2340;
+    color: #00823E;
 }
 
 footer a:hover {
-    color: #00823E;
+    color: #0c2340;
 }
 
 /* END GENERAL STYLING */
@@ -259,6 +259,7 @@ footer a:hover {
 .schedule-item div:first-child {
     display: flex;
     text-align: center;
+    margin-left: 10px;
 }
 
 .schedule-item .date-opponent {
@@ -310,12 +311,19 @@ footer a:hover {
 
 .highlight-link a {
     text-decoration: none;
+    text-align: center;
     color: white;
     font-size: 20px;
 }
 
 .highlight-link a:hover {
     color: #ae9142;
+}
+
+.highlight-link-empty p {
+    text-decoration: none;
+    color: transparent;
+    font-size: 20px;
 }
 
 .result {
