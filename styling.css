@@ -402,6 +402,13 @@ footer a:hover {
     }
 }
 
+@media all and (min-width: 426px) and (max-width: 768px) {
+    
+    .result {
+        font-size: 21px;
+    }
+}
+
 @media all and (max-width: 425px) {
     .overall-schedule {
         font-size: smaller;
@@ -418,6 +425,10 @@ footer a:hover {
 
     .highlight-link {
         margin-top: 10px;
+    }
+
+    .schedule-item div:first-child {
+        margin-left: 0;
     }
 }
 
