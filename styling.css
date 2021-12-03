@@ -332,6 +332,90 @@ footer a:hover {
 
 /* END OF STYLING OF '2021 SCHEDULE' PAGE */
 
+/* START STYLING OF '2021 ROSTER' PAGE */
+#mother-of-all-rosters {
+    display: grid;
+    row-gap: 25px;
+}
+
+.roster-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ae9142;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.roster-header header {
+    background-color: #00823E;
+    color: white;
+    padding: 10px;
+}
+
+.proster-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.player-photo-number-name-container {
+    width: 188.13px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.player-number-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-number-name p:first-child {
+    width: 32px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ae9142;
+    color: #0c2340;
+    font-weight: bold;
+}
+
+.player-number-name p:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.player-number-name p:last-child {
+    margin-top: 0;
+}
+
+
+.proster-item {
+    border-top: 1px solid #ae9142;
+    border-right: 1px solid #ae9142;
+    border-left: 1px solid #ae9142;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    /*
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    */
+}
+
+.proster-item:last-child {
+    border-bottom: 1px solid #ae9142;
+}
+
+/* END STYLING OF '2021 ROSTER' PAGE */
+
 /* MEDIA QUERIES */
 
 @media all and (min-width: 1440px) {
@@ -400,6 +484,10 @@ footer a:hover {
         width: 80px;
         height: 80px;
     }
+
+    #mother-of-all-rosters {
+        font-size: 15px;
+    }
 }
 
 @media all and (min-width: 426px) and (max-width: 768px) {
@@ -429,6 +517,14 @@ footer a:hover {
 
     .schedule-item div:first-child {
         margin-left: 0;
+    }
+
+    #mother-of-all-rosters {
+        font-size: 10px;
+    }
+
+    .roster-header {
+        font-size: 10px;
     }
 }
 
